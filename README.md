@@ -1,9 +1,16 @@
 # API CRUD de Pokémon (Flask)
 
 Mini proyecto de la Unidad Curricular **DevOps** — UTEC.
-**Estudiantes**: Veronica Couto y Daiana Silvera
 
 API REST que gestiona información de Pokémon (crear, leer, actualizar y eliminar). Toda la información se guarda **en memoria**: no se usa base de datos, por lo que los datos se reinician cada vez que se reinicia el servidor.
+
+## Estructura del proyecto
+.
+├── app.py                                          # Servidor Flask con las rutas CRUD
+├── README.md
+└── postman/
+    └── Pokemon_API.postman_collection.json         # Colección de pruebas Postman
+
 
 ## Requisitos previos
 
@@ -125,6 +132,9 @@ curl -X DELETE http://127.0.0.1:5000/pokemons/1
 - Las respuestas de error (por ejemplo, Pokémon no encontrado) devuelven código HTTP `404`.
 - Las creaciones exitosas devuelven código HTTP `201`, el resto de operaciones exitosas devuelven `200`.
 
-## Autor/a
 
-- Vero — UTEC, Unidad Curricular DevOps
+
+
+## Autoras
+
+- Veronica Couto y Daiana Silvera — UTEC, Unidad Curricular DevOps
