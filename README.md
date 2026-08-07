@@ -132,8 +132,18 @@ curl -X DELETE http://127.0.0.1:5000/pokemons/1
 - Las respuestas de error (por ejemplo, Pokémon no encontrado) devuelven código HTTP `404`.
 - Las creaciones exitosas devuelven código HTTP `201`, el resto de operaciones exitosas devuelven `200`.
 
+## Pruebas con Postman
 
+Se incluye una colección de Postman (Pokemon_API.postman_collection.json) con pruebas automatizadas para todos los endpoints (listar, crear, obtener por ID, actualizar, eliminar, y casos de error 404).
 
+### Cómo usarla
+
+1. Abrí Postman.
+2. Hacé clic en *Import* y seleccioná el archivo Pokemon_API.postman_collection.json.
+3. Asegurate de tener el servidor corriendo (python app.py) antes de ejecutar los requests.
+4. Ejecutá los requests en orden (del 1 al 9), o corré toda la colección de una vez con *Run collection*.
+
+> La colección usa una variable baseUrl (por defecto http://127.0.0.1:5000) y guarda automáticamente el id del Pokémon creado para reutilizarlo en los siguientes pasos.
 
 ## Autoras
 
